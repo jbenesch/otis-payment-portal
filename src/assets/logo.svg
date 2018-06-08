@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 80 80" height="50" width="50">
+    <linearGradient id="yellow2pink" x1="0%" y1="0%" x2="80%" y2="100%">
+        <stop offset="45%" stop-color="rgb(244,201,90)" stop-opacity="1" />
+        <stop offset="100%" stop-color="rgb(230,62,183)" stop-opacity="1" />
+    </linearGradient>
+    <circle
+        x="5"
+        y="5"
+        cx="-30"
+        cy="-30"
+        r="6"
+        fill="#F4C95A"
+    />
+    <circle
+        x="25"
+        y="25"
+        cx="0"
+        cy="0"
+        r="30"
+        fill="url(#yellow2pink)"
+    />
+    <circle
+        x="25"
+        y="25"
+        cx="0"
+        cy="0"
+        r="12"
+        fill="#293742"
+    />
+</svg>
