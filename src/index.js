@@ -1,8 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Provider } from 'react-redux';
+import { FocusStyleManager } from '@blueprintjs/core';
+import 'normalize.css/normalize.css';
+import '@blueprintjs/core/lib/css/blueprint.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import './components/Background';
+import store from './store';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+// Focus styles will be hidden while the user interacts using the mouse
+// and will only appear when the tab key is pressed to begin keyboard navigation.
+// http://blueprintjs.com/docs/v2/#core/accessibility.focus-management
+FocusStyleManager.onlyShowFocusOnTabs();
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
