@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'redux-little-router';
-import styled from 'styled-components';
-import { Colors, Icon } from '@blueprintjs/core';
+import React from 'react'
+import { Link } from 'redux-little-router'
+import styled from 'styled-components'
+import { Colors, Icon } from '@blueprintjs/core'
 
 const MenuListItem = styled.li`
   list-style: none;
@@ -20,7 +20,7 @@ const MenuListItem = styled.li`
     color: ${Colors.LIGHT_GRAY1} !important;
     text-decoration: none;
   }
-`;
+`
 
 const Sidebar = () => (
   <ul style={{ paddingLeft: 0, marginTop: 0 }}>
@@ -85,10 +85,10 @@ const Sidebar = () => (
       </Link>
     </MenuListItem>
   </ul>
-);
+)
 
-Sidebar.propTypes = {};
+Sidebar.propTypes = {}
 
-Sidebar.defaultProps = {};
+Sidebar.defaultProps = {}
 
-export default Sidebar;
+export default Sidebar

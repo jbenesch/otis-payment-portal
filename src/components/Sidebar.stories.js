@@ -1,13 +1,13 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
-import { Provider } from 'react-redux';
-import configureStore from 'redux-mock-store';
-import MobileLayout from '../../.storybook/Mobile';
-import Sidebar from './Sidebar';
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withKnobs } from '@storybook/addon-knobs'
+import { Provider } from 'react-redux'
+import configureStore from 'redux-mock-store'
+import MobileLayout from '../../.storybook/Mobile'
+import Sidebar from './Sidebar'
 
-const SidebarStory = storiesOf('Sidebar', module);
-const mockStore = configureStore([]);
+const SidebarStory = storiesOf('Sidebar', module)
+const mockStore = configureStore([])
 const store = mockStore({
   router: {
     pathname: '/',
@@ -16,9 +16,9 @@ const store = mockStore({
       id: 'Dashboard'
     }
   }
-});
+})
 
-SidebarStory.addDecorator(withKnobs);
+SidebarStory.addDecorator(withKnobs)
 
 SidebarStory.add('Desktop', () => (
   <div style={{ margin: '50px' }}>
@@ -26,7 +26,7 @@ SidebarStory.add('Desktop', () => (
       <Sidebar />
     </Provider>
   </div>
-));
+))
 
 SidebarStory.add('Mobile', () => (
   <MobileLayout>
@@ -36,4 +36,4 @@ SidebarStory.add('Mobile', () => (
       </Provider>
     )}
   </MobileLayout>
-));
+))
