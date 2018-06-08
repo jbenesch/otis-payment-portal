@@ -200,7 +200,7 @@ exports[`matches a previous snapshot 1`] = `
         <button
           class="pt-button pt-disabled pt-large pt-intent-primary"
           disabled=""
-          type="button"
+          type="submit"
         >
           <span
             class="pt-button-text"

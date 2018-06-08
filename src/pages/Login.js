@@ -138,6 +138,7 @@ const Login = ({ handleSubmit, pristine, submitting, error }) => (
                     <Column style={{ textAlign: 'center' }}>
                       <Button
                         text="Login"
+                        type="submit"
                         onClick={handleSubmit}
                         intent={Intent.PRIMARY}
                         disabled={pristine || submitting}

@@ -150,6 +150,7 @@ export const ProfileWidget = ({
         <Column style={{ textAlign: 'center' }}>
           <Button
             text="Update Profile"
+            type="submit"
             onClick={handleSubmit}
             intent={Intent.PRIMARY}
             disabled={pristine || submitting}
