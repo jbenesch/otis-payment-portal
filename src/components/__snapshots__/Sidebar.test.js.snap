@@ -38,7 +38,8 @@ exports[`matches a previous snapshot 1`] = `
           fillRule="evenodd"
         />
       </svg>
-       My Dashboard
+       
+      My Dashboard
     </a>
   </li>
   <li
@@ -69,7 +70,8 @@ exports[`matches a previous snapshot 1`] = `
           fillRule="evenodd"
         />
       </svg>
-       Account
+       
+      Account
     </a>
   </li>
   <li
@@ -100,7 +102,8 @@ exports[`matches a previous snapshot 1`] = `
           fillRule="evenodd"
         />
       </svg>
-       Mobile
+       
+      Mobile
     </a>
   </li>
   <li
@@ -131,7 +134,8 @@ exports[`matches a previous snapshot 1`] = `
           fillRule="evenodd"
         />
       </svg>
-       Bills
+       
+      Bills
     </a>
   </li>
   <li
@@ -162,7 +166,8 @@ exports[`matches a previous snapshot 1`] = `
           fillRule="evenodd"
         />
       </svg>
-       Complaints
+       
+      Complaints
     </a>
   </li>
   <li
@@ -193,7 +198,8 @@ exports[`matches a previous snapshot 1`] = `
           fillRule="evenodd"
         />
       </svg>
-       Customer Care
+       
+      Customer Care
     </a>
   </li>
 </ul>

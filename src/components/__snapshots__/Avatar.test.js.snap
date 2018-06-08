@@ -7,3 +7,11 @@ exports[`matches a previous snapshot 1`] = `
   src="https://randomuser.me/api/portraits/men/51.jpg"
 />
 `;
+
+exports[`should render a avatar component 1`] = `
+<img
+  className="sc-bdVaJa hrdBvl"
+  size="large"
+  src="https://randomuser.me/api/portraits/men/51.jpg"
+/>
+`;

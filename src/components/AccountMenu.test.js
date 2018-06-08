@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow } from 'enzyme'
 import renderer from 'react-test-renderer'
 import { Provider } from 'react-redux'
 import configureStore from 'redux-mock-store'
@@ -18,6 +18,16 @@ const store = mockStore({
       large: 'https://randomuser.me/api/portraits/men/83.jpg'
     }
   }
+})
+
+it('should render the account menu', () => {
+  const wrapper = shallow(
+    <AccountMenu
+      firstName="Joe"
+      avatar="https://randomuser.me/api/portraits/men/51.jpg"
+    />
+  )
+  expect(wrapper).toMatchSnapshot()
 })
 
 it("renders the user's first name", () => {

@@ -1,13 +1,13 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withKnobs, select, text } from '@storybook/addon-knobs';
-import styled from 'styled-components';
-import MobileLayout from '../../.storybook/Mobile';
-import Avatar from './Avatar';
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withKnobs, select, text } from '@storybook/addon-knobs'
+import styled from 'styled-components'
+import MobileLayout from '../../.storybook/Mobile'
+import Avatar from './Avatar'
 
-const AvatarStory = storiesOf('Avatar', module);
+const AvatarStory = storiesOf('Avatar', module)
 
-AvatarStory.addDecorator(withKnobs);
+AvatarStory.addDecorator(withKnobs)
 
 const Row = styled.div`
   margin: 50px;
@@ -16,13 +16,13 @@ const Row = styled.div`
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-`;
+`
 
 AvatarStory.add('Desktop', () => {
   const src = text(
     'Image Src',
     'https://randomuser.me/api/portraits/men/51.jpg'
-  );
+  )
   const size = select(
     'Size',
     {
@@ -31,7 +31,7 @@ AvatarStory.add('Desktop', () => {
       small: 'small'
     },
     'large'
-  );
+  )
 
   return (
     <Row>
@@ -40,14 +40,14 @@ AvatarStory.add('Desktop', () => {
       <Avatar src={src} size="medium" style={{ marginRight: 20 }} />
       <Avatar src={src} size="small" />
     </Row>
-  );
-});
+  )
+})
 
 AvatarStory.add('Mobile', () => {
   const src = text(
     'Image Src',
     'https://randomuser.me/api/portraits/men/51.jpg'
-  );
+  )
   const size = select(
     'Size',
     {
@@ -56,7 +56,7 @@ AvatarStory.add('Mobile', () => {
       small: 'small'
     },
     'medium'
-  );
+  )
 
   return (
     <MobileLayout>
@@ -66,5 +66,5 @@ AvatarStory.add('Mobile', () => {
         </div>
       )}
     </MobileLayout>
-  );
-});
+  )
+})

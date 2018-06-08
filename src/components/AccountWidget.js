@@ -1,6 +1,6 @@
-import React from 'react';
-import { Row, Column } from 'hedron';
-import styled from 'styled-components';
+import React from 'react'
+import { Row, Column } from 'hedron'
+import styled from 'styled-components'
 import {
   Button,
   ButtonGroup,
@@ -8,12 +8,12 @@ import {
   Icon,
   Intent,
   Tag
-} from '@blueprintjs/core';
-import Widget from '../components/Widget';
+} from '@blueprintjs/core'
+import Widget from '../components/Widget'
 
 const WidgetTitle = styled.h5`
   color: ${Colors.LIGHT_GRAY5};
-`;
+`
 
 const AccountWidget = () => (
   <Widget>
@@ -108,10 +108,10 @@ const AccountWidget = () => (
       </tbody>
     </table>
   </Widget>
-);
+)
 
-AccountWidget.propTypes = {};
+AccountWidget.propTypes = {}
 
-AccountWidget.defaultProps = {};
+AccountWidget.defaultProps = {}
 
-export default AccountWidget;
+export default AccountWidget

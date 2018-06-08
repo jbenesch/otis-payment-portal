@@ -543,3 +543,208 @@ exports[`matches a previous snapshot 1`] = `
   </table>
 </div>
 `;
+
+exports[`should render the account widget 1`] = `
+<styled.div>
+  <Styled(RowContainer)>
+    <Breakpoints
+      sm={7}
+      style={
+        Object {
+          "paddingBottom": 5,
+          "paddingLeft": 10,
+        }
+      }
+    >
+      <styled.h5>
+        My Accounts
+      </styled.h5>
+    </Breakpoints>
+    <Breakpoints
+      sm={1}
+      style={
+        Object {
+          "paddingBottom": 5,
+          "paddingRight": 0,
+          "textAlign": "right",
+        }
+      }
+    >
+      <Blueprint2.Icon
+        icon="search"
+        iconSize={20}
+      />
+    </Breakpoints>
+    <Breakpoints
+      sm={4}
+      style={
+        Object {
+          "paddingBottom": 0,
+          "paddingRight": 10,
+          "paddingTop": 15,
+          "textAlign": "right",
+        }
+      }
+    >
+      <Blueprint2.Tag
+        interactive={true}
+        large={true}
+        minimal={true}
+        round={true}
+        style={
+          Object {
+            "color": "#CED9E0",
+          }
+        }
+      >
+        <Blueprint2.Icon
+          icon="filter-list"
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        />
+        Filter by
+      </Blueprint2.Tag>
+    </Breakpoints>
+  </Styled(RowContainer)>
+  <table
+    className="pt-html-table"
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <tbody>
+      <tr>
+        <td
+          style={
+            Object {
+              "paddingTop": 25,
+            }
+          }
+        >
+          Blueprint - CSS framework and UI toolkit
+        </td>
+        <td
+          style={
+            Object {
+              "paddingTop": 25,
+              "textAlign": "right",
+            }
+          }
+        >
+          <Blueprint2.ButtonGroup>
+            <Blueprint2.Button
+              icon="tick"
+              intent="success"
+            />
+            <Blueprint2.Button
+              icon="cog"
+              rightIcon="chevron-down"
+            />
+          </Blueprint2.ButtonGroup>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          TSLint - Static analysis linter for TypeScript
+        </td>
+        <td
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <Blueprint2.ButtonGroup>
+            <Blueprint2.ButtonGroup>
+              <Blueprint2.Button
+                icon="tick"
+              />
+              <Blueprint2.Button
+                icon="cog"
+                rightIcon="chevron-down"
+              />
+            </Blueprint2.ButtonGroup>
+          </Blueprint2.ButtonGroup>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Plottable - Composable charting library built on top of D3
+        </td>
+        <td
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <Blueprint2.ButtonGroup>
+            <Blueprint2.ButtonGroup>
+              <Blueprint2.Button
+                icon="tick"
+              />
+              <Blueprint2.Button
+                icon="cog"
+                rightIcon="chevron-down"
+              />
+            </Blueprint2.ButtonGroup>
+          </Blueprint2.ButtonGroup>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          TSLint - Static analysis linter for TypeScript
+        </td>
+        <td
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <Blueprint2.ButtonGroup>
+            <Blueprint2.ButtonGroup>
+              <Blueprint2.Button
+                icon="tick"
+              />
+              <Blueprint2.Button
+                icon="cog"
+                rightIcon="chevron-down"
+              />
+            </Blueprint2.ButtonGroup>
+          </Blueprint2.ButtonGroup>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Plottable - Composable charting library built on top of D3
+        </td>
+        <td
+          style={
+            Object {
+              "textAlign": "right",
+            }
+          }
+        >
+          <Blueprint2.ButtonGroup>
+            <Blueprint2.ButtonGroup>
+              <Blueprint2.Button
+                icon="tick"
+              />
+              <Blueprint2.Button
+                icon="cog"
+                rightIcon="chevron-down"
+              />
+            </Blueprint2.ButtonGroup>
+          </Blueprint2.ButtonGroup>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</styled.div>
+`;

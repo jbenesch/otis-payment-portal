@@ -14,8 +14,8 @@ exports[`matches a previous snapshot 1`] = `
       tabIndex={undefined}
     >
       <img
-        className="sc-bdVaJa MHWqC"
-        size="medium"
+        className="sc-bdVaJa hrdBvl"
+        size="large"
         src="https://randomuser.me/api/portraits/men/83.jpg"
         style={
           Object {
@@ -49,4 +49,68 @@ exports[`matches a previous snapshot 1`] = `
     </div>
   </div>
 </span>
+`;
+
+exports[`should render the account menu 1`] = `
+<Blueprint2.Popover
+  defaultIsOpen={false}
+  disabled={false}
+  hasBackdrop={false}
+  hoverCloseDelay={300}
+  hoverOpenDelay={150}
+  inheritDarkTheme={true}
+  interactionKind="click"
+  minimal={false}
+  modifiers={Object {}}
+  openOnTargetFocus={true}
+  position="auto"
+  rootElementTag="span"
+  targetElementTag="div"
+  transitionDuration={300}
+  usePortal={true}
+>
+  <styled.div>
+    <styled.img
+      size="large"
+      src="https://randomuser.me/api/portraits/men/51.jpg"
+      style={
+        Object {
+          "marginRight": 15,
+        }
+      }
+    />
+    <span>
+      Hi 
+      <b>
+        Joe
+      </b>
+       
+      <Blueprint2.Icon
+        icon="chevron-down"
+        iconSize={20}
+      />
+    </span>
+  </styled.div>
+  <Blueprint2.Menu>
+    <Blueprint2.MenuItem
+      disabled={false}
+      icon="id-number"
+      multiline={false}
+      onClick={[Function]}
+      popoverProps={Object {}}
+      shouldDismissPopover={true}
+      text="Edit My Profile"
+    />
+    <Blueprint2.MenuDivider />
+    <Blueprint2.MenuItem
+      disabled={false}
+      icon="log-out"
+      multiline={false}
+      onClick={[Function]}
+      popoverProps={Object {}}
+      shouldDismissPopover={true}
+      text="Logout"
+    />
+  </Blueprint2.Menu>
+</Blueprint2.Popover>
 `;

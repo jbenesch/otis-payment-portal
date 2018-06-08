@@ -47,12 +47,6 @@ const Label = styled.label`
 export const ProfileWidget = ({
   firstName,
   avatar,
-  username,
-  phone,
-  address,
-  city,
-  state,
-  zip,
   registered,
   dob,
   handleSubmit,
