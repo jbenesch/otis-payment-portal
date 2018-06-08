@@ -37,3 +37,7 @@ To run tests for this project, simply run the following commands from the root o
 
 * `yarn test`
 
+### Prototyping
+This project contains the Storybook project. Storybook provides an interface to be able to quickly prototype components and build components outside the scope of the application allowing the engineer to concentrate on the component api void of application state. To run Storybook simply type the following command from the root of the project:
+
+* `yarn storybook`
