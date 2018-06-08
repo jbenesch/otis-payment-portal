@@ -24,7 +24,7 @@ Avatar.propTypes = {
 }
 
 Avatar.defaultProps = {
-  size: 'large'
+  size: 'medium'
 }
 
 export default Avatar

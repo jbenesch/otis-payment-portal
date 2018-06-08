@@ -14,8 +14,8 @@ exports[`matches a previous snapshot 1`] = `
       tabIndex={undefined}
     >
       <img
-        className="sc-bdVaJa hrdBvl"
-        size="large"
+        className="sc-bdVaJa MHWqC"
+        size="medium"
         src="https://randomuser.me/api/portraits/men/83.jpg"
         style={
           Object {
@@ -71,7 +71,7 @@ exports[`should render the account menu 1`] = `
 >
   <styled.div>
     <styled.img
-      size="large"
+      size="medium"
       src="https://randomuser.me/api/portraits/men/51.jpg"
       style={
         Object {

@@ -46,8 +46,8 @@ exports[`matches a previous snapshot 1`] = `
       }
     >
       <img
-        className="sc-ifAKCX hKlxmg"
-        size="large"
+        className="sc-ifAKCX gZppUQ"
+        size="medium"
         src="https://randomuser.me/api/portraits/men/83.jpg"
         style={
           Object {

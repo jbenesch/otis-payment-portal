@@ -73,8 +73,8 @@ exports[`matches a previous snapshot 1`] = `
             tabIndex={undefined}
           >
             <img
-              className="sc-ifAKCX hKlxmg"
-              size="large"
+              className="sc-ifAKCX gZppUQ"
+              size="medium"
               src=""
               style={
                 Object {

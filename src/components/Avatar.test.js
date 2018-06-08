@@ -15,7 +15,7 @@ it('should default to large size', () => {
   const wrapper = shallow(
     <Avatar src="https://randomuser.me/api/portraits/men/51.jpg" />
   )
-  expect(wrapper.prop('size')).toEqual('large')
+  expect(wrapper.prop('size')).toEqual('medium')
 })
 
 it('should render a avatar component', () => {
