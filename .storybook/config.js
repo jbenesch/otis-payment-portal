@@ -1,6 +1,5 @@
 import { configure, setAddon } from '@storybook/react'
 import { setOptions } from '@storybook/addon-options'
-import infoAddon from '@storybook/addon-info'
 
 const req = require.context('../src/components', true, /\.stories\.js$/)
 
@@ -13,7 +12,5 @@ setOptions({
   downPanelInRight: true,
   sortStoriesByKind: true,
 })
-
-setAddon(infoAddon)
 
 configure(loadStories, module)

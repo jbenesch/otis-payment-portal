@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches a previous snapshot 1`] = `
+<div
+  className="sc-gzVnrw hRHTaE sc-EHOje hHLIWu"
+>
+  <section
+    className="sc-bwzfXH kqLuzx"
+  >
+    <div
+      className="sc-htpNat kSibxJ"
+    >
+      <h5
+        className="sc-bZQynM lkYeUM"
+      >
+        My Profile
+      </h5>
+      <div
+        style={
+          Object {
+            "color": "#D8E1E8",
+            "marginBottom": 10,
+          }
+        }
+      >
+        Registered: 
+        2010-09-24 02:10:42
+      </div>
+      <div
+        style={
+          Object {
+            "color": "#E1E8ED",
+          }
+        }
+      >
+        Birthday: 
+        1983-07-14 07:29:45
+      </div>
+    </div>
+    <div
+      className="sc-htpNat egfJaR"
+      style={
+        Object {
+          "textAlign": "right",
+        }
+      }
+    >
+      <img
+        className="sc-ifAKCX gZppUQ"
+        size="medium"
+        src="https://randomuser.me/api/portraits/men/51.jpg"
+        style={
+          Object {
+            "width": 120,
+          }
+        }
+      />
+    </div>
+  </section>
+  <form>
+    <section
+      className="sc-bwzfXH irrVft"
+    >
+      <div
+        className="sc-htpNat hrIxvT"
+      >
+        <span
+          style={
+            Object {
+              "position": "relative",
+            }
+          }
+        >
+          <label
+            className="sc-dnqmqq ioIzAX"
+          >
+            Username
+          </label>
+          <input
+            className="sc-htoDjs epgNmc"
+            type="text"
+            value="joesmith"
+          />
+        </span>
+      </div>
+      <div
+        className="sc-htpNat hrIxvT"
+      >
+        <span
+          style={
+            Object {
+              "position": "relative",
+            }
+          }
+        >
+          <label
+            className="sc-dnqmqq ioIzAX"
+          >
+            Phone Number
+          </label>
+          <input
+            className="sc-htoDjs epgNmc"
+            placeholder="(321) 321-3214"
+            type="text"
+            value="(321) 321-4321"
+          />
+        </span>
+      </div>
+    </section>
+    <section
+      className="sc-bwzfXH irrVft"
+    >
+      <div
+        className="sc-htpNat hrIxvT"
+      >
+        <span
+          style={
+            Object {
+              "position": "relative",
+            }
+          }
+        >
+          <label
+            className="sc-dnqmqq ioIzAX"
+          >
+            Address
+          </label>
+          <input
+            className="sc-htoDjs epgNmc"
+            placeholder="1234 Main St"
+            type="text"
+            value="1234 Main Street"
+          />
+        </span>
+      </div>
+      <div
+        className="sc-htpNat hrIxvT"
+      >
+        <span
+          style={
+            Object {
+              "position": "relative",
+            }
+          }
+        >
+          <label
+            className="sc-dnqmqq ioIzAX"
+          >
+            City
+          </label>
+          <input
+            className="sc-htoDjs epgNmc"
+            placeholder="San Diego"
+            type="text"
+            value="San Diego"
+          />
+        </span>
+      </div>
+    </section>
+    <section
+      className="sc-bwzfXH irrVft"
+    >
+      <div
+        className="sc-htpNat hrIxvT"
+      >
+        <span
+          style={
+            Object {
+              "position": "relative",
+            }
+          }
+        >
+          <label
+            className="sc-dnqmqq ioIzAX"
+          >
+            State
+          </label>
+          <input
+            className="sc-htoDjs epgNmc"
+            placeholder="California"
+            type="text"
+            value="CA"
+          />
+        </span>
+      </div>
+      <div
+        className="sc-htpNat hrIxvT"
+      >
+        <span
+          style={
+            Object {
+              "position": "relative",
+            }
+          }
+        >
+          <label
+            className="sc-dnqmqq ioIzAX"
+          >
+            Zip Code
+          </label>
+          <input
+            className="sc-htoDjs epgNmc"
+            placeholder="92071"
+            type="text"
+            value="92101"
+          />
+        </span>
+      </div>
+    </section>
+    <section
+      className="sc-bwzfXH irrVft"
+    >
+      <div
+        className="sc-htpNat bKOCBb"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <button
+          className="pt-button pt-large pt-intent-primary"
+          disabled={undefined}
+          onClick={undefined}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          type="button"
+        >
+          <span
+            className="pt-button-text"
+          >
+            Update Profile
+          </span>
+        </button>
+      </div>
+    </section>
+  </form>
+</div>
+`;
