@@ -1,14 +1,12 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
 import Avatar from './Avatar'
 
 it('matches a previous snapshot', () => {
-  const component = renderer.create(
+  const dom = render(
     <Avatar src="https://randomuser.me/api/portraits/men/51.jpg" size="large" />
   )
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(dom).toMatchSnapshot()
 })
 
 it('should default to large size', () => {

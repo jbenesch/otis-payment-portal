@@ -1,5 +1,5 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from 'enzyme'
 import { Provider } from 'react-redux'
 import configureStore from 'redux-mock-store'
 import Sidebar from './Sidebar'
@@ -16,11 +16,10 @@ const store = mockStore({
 })
 
 it('matches a previous snapshot', () => {
-  const component = renderer.create(
+  const dom = render(
     <Provider store={store}>
       <Sidebar />
     </Provider>
   )
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(dom).toMatchSnapshot()
 })

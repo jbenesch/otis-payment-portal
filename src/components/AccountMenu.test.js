@@ -1,6 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import renderer from 'react-test-renderer'
+import { shallow, render } from 'enzyme'
 import { Provider } from 'react-redux'
 import configureStore from 'redux-mock-store'
 import ConnectedAccountMenu, { AccountMenu } from './AccountMenu'
@@ -41,11 +40,10 @@ it("renders the user's first name", () => {
 })
 
 it('matches a previous snapshot', () => {
-  const component = renderer.create(
+  const dom = render(
     <Provider store={store}>
       <ConnectedAccountMenu />
     </Provider>
   )
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(dom).toMatchSnapshot()
 })

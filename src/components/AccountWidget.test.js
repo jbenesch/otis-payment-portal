@@ -1,12 +1,10 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import renderer from 'react-test-renderer'
+import { shallow, render } from 'enzyme'
 import AccountWidget from './AccountWidget'
 
 it('matches a previous snapshot', () => {
-  const component = renderer.create(<AccountWidget />)
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  const dom = render(<AccountWidget />)
+  expect(dom).toMatchSnapshot()
 })
 
 it('should render the account widget', () => {

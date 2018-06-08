@@ -2,6 +2,8 @@
 
 exports[`matches a previous snapshot 1`] = `
 <div
-  className="sc-bdVaJa dTtgiD"
-/>
+  class="sc-bdVaJa dTtgiD"
+>
+  
+</div>
 `;

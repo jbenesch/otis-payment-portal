@@ -2,277 +2,208 @@
 
 exports[`matches a previous snapshot 1`] = `
 <div
-  className="sc-gzVnrw hRHTaE sc-EHOje hHLIWu"
+  class="sc-gzVnrw hRHTaE sc-EHOje hHLIWu"
 >
   <section
-    className="sc-bwzfXH kqLuzx"
+    class="sc-bwzfXH kqLuzx"
   >
     <div
-      className="sc-htpNat fUhquh"
+      class="sc-htpNat fUhquh"
     >
       <h5
-        className="sc-bZQynM lkYeUM"
+        class="sc-bZQynM lkYeUM"
       >
         My Profile
       </h5>
       <div
-        style={
-          Object {
-            "color": "#D8E1E8",
-            "marginBottom": 10,
-          }
-        }
+        style="color:#D8E1E8;margin-bottom:10px"
       >
-        Registered: 
-        2010-09-24 02:10:42
+        Registered: 2010-09-24 02:10:42
       </div>
       <div
-        style={
-          Object {
-            "color": "#E1E8ED",
-          }
-        }
+        style="color:#E1E8ED"
       >
-        Birthday: 
-        1983-07-14 07:29:45
+        Birthday: 1983-07-14 07:29:45
       </div>
     </div>
     <div
-      className="sc-htpNat jjnka"
-      style={
-        Object {
-          "textAlign": "right",
-        }
-      }
+      class="sc-htpNat jjnka"
+      style="text-align:right"
     >
       <img
-        className="sc-ifAKCX gZppUQ"
-        size="medium"
+        class="sc-ifAKCX gZppUQ"
         src="https://randomuser.me/api/portraits/men/83.jpg"
-        style={
-          Object {
-            "width": 120,
-          }
-        }
-      />
+        style="width:120px"
+      >
+        
+      </img>
     </div>
   </section>
-  <form
-    onSubmit={[Function]}
-  >
+  <form>
     <section
-      className="sc-bwzfXH irrVft"
+      class="sc-bwzfXH irrVft"
     >
       <div
-        className="sc-htpNat hrIxvT"
+        class="sc-htpNat hrIxvT"
       >
         <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
+          style="position:relative"
         >
           <label
-            className="sc-dnqmqq ioIzAX"
+            class="sc-dnqmqq ioIzAX"
           >
             Username
           </label>
           <input
-            className="sc-htoDjs kBSAMN"
+            class="sc-htoDjs kBSAMN"
             name="username"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onDragStart={[Function]}
-            onDrop={[Function]}
-            onFocus={[Function]}
             placeholder="joesmith"
-            tabIndex={1}
+            tabindex="1"
             type="text"
             value=""
-          />
+          >
+            
+          </input>
         </span>
       </div>
       <div
-        className="sc-htpNat hrIxvT"
+        class="sc-htpNat hrIxvT"
       >
         <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
+          style="position:relative"
         >
           <label
-            className="sc-dnqmqq ioIzAX"
+            class="sc-dnqmqq ioIzAX"
           >
             Phone Number
           </label>
           <input
-            className="sc-htoDjs kBSAMN"
+            class="sc-htoDjs kBSAMN"
             name="phone"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onDragStart={[Function]}
-            onDrop={[Function]}
-            onFocus={[Function]}
             placeholder="(321) 321-3214"
-            tabIndex={2}
+            tabindex="2"
             type="text"
             value=""
-          />
+          >
+            
+          </input>
         </span>
       </div>
     </section>
     <section
-      className="sc-bwzfXH irrVft"
+      class="sc-bwzfXH irrVft"
     >
       <div
-        className="sc-htpNat hrIxvT"
+        class="sc-htpNat hrIxvT"
       >
         <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
+          style="position:relative"
         >
           <label
-            className="sc-dnqmqq ioIzAX"
+            class="sc-dnqmqq ioIzAX"
           >
             Address
           </label>
           <input
-            className="sc-htoDjs kBSAMN"
+            class="sc-htoDjs kBSAMN"
             name="address"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onDragStart={[Function]}
-            onDrop={[Function]}
-            onFocus={[Function]}
             placeholder="1234 Main St"
-            tabIndex={3}
+            tabindex="3"
             type="text"
             value=""
-          />
+          >
+            
+          </input>
         </span>
       </div>
       <div
-        className="sc-htpNat hrIxvT"
+        class="sc-htpNat hrIxvT"
       >
         <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
+          style="position:relative"
         >
           <label
-            className="sc-dnqmqq ioIzAX"
+            class="sc-dnqmqq ioIzAX"
           >
             City
           </label>
           <input
-            className="sc-htoDjs kBSAMN"
+            class="sc-htoDjs kBSAMN"
             name="city"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onDragStart={[Function]}
-            onDrop={[Function]}
-            onFocus={[Function]}
             placeholder="San Diego"
-            tabIndex={4}
+            tabindex="4"
             type="text"
             value=""
-          />
+          >
+            
+          </input>
         </span>
       </div>
     </section>
     <section
-      className="sc-bwzfXH irrVft"
+      class="sc-bwzfXH irrVft"
     >
       <div
-        className="sc-htpNat hrIxvT"
+        class="sc-htpNat hrIxvT"
       >
         <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
+          style="position:relative"
         >
           <label
-            className="sc-dnqmqq ioIzAX"
+            class="sc-dnqmqq ioIzAX"
           >
             State
           </label>
           <input
-            className="sc-htoDjs kBSAMN"
+            class="sc-htoDjs kBSAMN"
             name="state"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onDragStart={[Function]}
-            onDrop={[Function]}
-            onFocus={[Function]}
             placeholder="California"
-            tabIndex={5}
+            tabindex="5"
             type="text"
             value=""
-          />
+          >
+            
+          </input>
         </span>
       </div>
       <div
-        className="sc-htpNat hrIxvT"
+        class="sc-htpNat hrIxvT"
       >
         <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
+          style="position:relative"
         >
           <label
-            className="sc-dnqmqq ioIzAX"
+            class="sc-dnqmqq ioIzAX"
           >
             Zip Code
           </label>
           <input
-            className="sc-htoDjs kBSAMN"
+            class="sc-htoDjs kBSAMN"
             name="zip"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onDragStart={[Function]}
-            onDrop={[Function]}
-            onFocus={[Function]}
             placeholder="92071"
-            tabIndex={6}
+            tabindex="6"
             type="text"
             value=""
-          />
+          >
+            
+          </input>
         </span>
       </div>
     </section>
     <section
-      className="sc-bwzfXH irrVft"
+      class="sc-bwzfXH irrVft"
     >
       <div
-        className="sc-htpNat bKOCBb"
-        style={
-          Object {
-            "textAlign": "center",
-          }
-        }
+        class="sc-htpNat bKOCBb"
+        style="text-align:center"
       >
         <button
-          className="pt-button pt-disabled pt-large pt-intent-primary"
-          disabled={true}
-          onClick={undefined}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
+          class="pt-button pt-disabled pt-large pt-intent-primary"
+          disabled=""
           type="button"
         >
           <span
-            className="pt-button-text"
+            class="pt-button-text"
           >
             Update Profile
           </span>
