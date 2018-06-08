@@ -16,7 +16,7 @@ exports[`matches a previous snapshot 1`] = `
       <img
         className="sc-bdVaJa MHWqC"
         size="medium"
-        src="https://randomuser.me/api/portraits/men/51.jpg"
+        src="https://randomuser.me/api/portraits/men/83.jpg"
         style={
           Object {
             "marginRight": 15,
@@ -26,7 +26,7 @@ exports[`matches a previous snapshot 1`] = `
       <span>
         Hi 
         <b>
-          Joe
+          Romain
         </b>
          
         <svg

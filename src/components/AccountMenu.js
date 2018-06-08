@@ -1,6 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import {
   Icon,
   Menu,
@@ -8,8 +9,9 @@ import {
   MenuDivider,
   Popover,
   Position
-} from '@blueprintjs/core';
-import Avatar from './Avatar';
+} from '@blueprintjs/core'
+import { logout } from '../actions'
+import Avatar from './Avatar'
 
 const Profile = styled.div`
   display: flex;
@@ -17,9 +19,9 @@ const Profile = styled.div`
   align-content: center;
   align-items: center;
   cursor: pointer;
-`;
+`
 
-const AccountMenu = ({ firstName, avatar, onEditProfile, onLogout }) => (
+export const AccountMenu = ({ firstName, avatar, onEditProfile, onLogout }) => (
   <Popover position={Position.BOTTOM_CENTER}>
     <Profile>
       <Avatar src={avatar} style={{ marginRight: 15 }} />
@@ -38,20 +40,34 @@ const AccountMenu = ({ firstName, avatar, onEditProfile, onLogout }) => (
       <MenuItem icon="log-out" text="Logout" onClick={onLogout} />
     </Menu>
   </Popover>
-);
+)
 
 AccountMenu.propTypes = {
   firstName: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
   onEditProfile: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired
-};
+}
 
 AccountMenu.defaultProps = {
   firstName: '',
   avatar: '',
   onEditProfile: () => {},
   onLogout: () => {}
-};
+}
 
-export default AccountMenu;
+export default connect(
+  ({ user }) => {
+    if (user && user.name && user.picture) {
+      return {
+        firstName:
+          user.name.first.charAt(0).toUpperCase() + user.name.first.substr(1),
+        avatar: user.picture.large
+      }
+    }
+    return {}
+  },
+  {
+    onLogout: logout
+  }
+)(AccountMenu)

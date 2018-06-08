@@ -1,20 +1,20 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, text } from '@storybook/addon-knobs';
-import MobileLayout from '../../.storybook/Mobile';
-import AccountMenu from './AccountMenu';
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
+import { withKnobs, text } from '@storybook/addon-knobs'
+import MobileLayout from '../../.storybook/Mobile'
+import { AccountMenu } from './AccountMenu'
 
-const AccountMenuStory = storiesOf('Account Menu', module);
+const AccountMenuStory = storiesOf('Account Menu', module)
 
-AccountMenuStory.addDecorator(withKnobs);
+AccountMenuStory.addDecorator(withKnobs)
 
 AccountMenuStory.add('Desktop', () => {
-  const firstName = text('First Name', 'Joe');
+  const firstName = text('First Name', 'Joe')
   const avatar = text(
     'Avatar',
     'https://randomuser.me/api/portraits/men/51.jpg'
-  );
+  )
 
   return (
     <div style={{ margin: '50px' }}>
@@ -25,15 +25,15 @@ AccountMenuStory.add('Desktop', () => {
         onLogout={action('Log User Out')}
       />
     </div>
-  );
-});
+  )
+})
 
 AccountMenuStory.add('Mobile', () => {
-  const firstName = text('First Name', 'Joe');
+  const firstName = text('First Name', 'Joe')
   const avatar = text(
     'Avatar',
     'https://randomuser.me/api/portraits/men/51.jpg'
-  );
+  )
 
   return (
     <MobileLayout>
@@ -48,5 +48,5 @@ AccountMenuStory.add('Mobile', () => {
         </div>
       )}
     </MobileLayout>
-  );
-});
+  )
+})

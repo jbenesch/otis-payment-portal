@@ -1,21 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Row, Column } from 'hedron';
-import styled from 'styled-components';
-import { Button, Colors, Intent } from '@blueprintjs/core';
-import Avatar from '../components/Avatar';
-import Widget from '../components/Widget';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { Row, Column } from 'hedron'
+import styled from 'styled-components'
+import { Button, Colors, Intent } from '@blueprintjs/core'
+import Avatar from '../components/Avatar'
+import Widget from '../components/Widget'
 
 const WidgetTitle = styled.h5`
   color: ${Colors.LIGHT_GRAY5};
   font-size: 1.8em;
   margin-bottom: 15px;
-`;
+`
 
 const WidgetWrapper = styled(Widget)`
   position: relative;
   opacity: 0.98;
-`;
+`
 
 const Input = styled.input`
   width: 100%;
@@ -29,7 +30,7 @@ const Input = styled.input`
   &::placeholder {
     color: ${Colors.DARK_GRAY5};
   }
-`;
+`
 
 const Label = styled.label`
   font-weight: bold;
@@ -38,9 +39,9 @@ const Label = styled.label`
   left: 5px;
   top: -30px;
   color: ${Colors.WHITE};
-`;
+`
 
-const ProfileWidget = ({
+export const ProfileWidget = ({
   firstName,
   avatar,
   username,
@@ -115,7 +116,7 @@ const ProfileWidget = ({
       </Row>
     </form>
   </WidgetWrapper>
-);
+)
 
 ProfileWidget.propTypes = {
   firstName: PropTypes.string.isRequired,
@@ -128,7 +129,7 @@ ProfileWidget.propTypes = {
   zip: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   registered: PropTypes.string,
   dob: PropTypes.string
-};
+}
 
 ProfileWidget.defaultProps = {
   firstName: '',
@@ -141,6 +142,26 @@ ProfileWidget.defaultProps = {
   zip: '',
   registered: '',
   dob: ''
-};
+}
 
-export default ProfileWidget;
+export default connect(
+  ({ user }) => {
+    if (user && user.name && user.picture) {
+      return {
+        firstName:
+          user.name.first.charAt(0).toUpperCase() + user.name.first.substr(1),
+        avatar: user.picture.large,
+        username: user.login.username,
+        phone: user.phone,
+        address: user.location.street,
+        city: user.location.city,
+        state: user.location.state,
+        zip: user.location.postcode,
+        registered: user.registered,
+        dob: user.dob
+      }
+    }
+    return {}
+  },
+  {}
+)(ProfileWidget)
