@@ -8,7 +8,7 @@ exports[`matches a previous snapshot 1`] = `
     className="sc-bwzfXH kqLuzx"
   >
     <div
-      className="sc-htpNat kSibxJ"
+      className="sc-htpNat fUhquh"
     >
       <h5
         className="sc-bZQynM lkYeUM"
@@ -38,7 +38,7 @@ exports[`matches a previous snapshot 1`] = `
       </div>
     </div>
     <div
-      className="sc-htpNat egfJaR"
+      className="sc-htpNat jjnka"
       style={
         Object {
           "textAlign": "right",
@@ -57,245 +57,9 @@ exports[`matches a previous snapshot 1`] = `
       />
     </div>
   </section>
-  <form>
-    <section
-      className="sc-bwzfXH irrVft"
-    >
-      <div
-        className="sc-htpNat hrIxvT"
-      >
-        <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
-        >
-          <label
-            className="sc-dnqmqq ioIzAX"
-          >
-            Username
-          </label>
-          <input
-            className="sc-htoDjs kBSAMN"
-            type="text"
-            value="lazyduck408"
-          />
-        </span>
-      </div>
-      <div
-        className="sc-htpNat hrIxvT"
-      >
-        <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
-        >
-          <label
-            className="sc-dnqmqq ioIzAX"
-          >
-            Phone Number
-          </label>
-          <input
-            className="sc-htoDjs kBSAMN"
-            placeholder="(321) 321-3214"
-            type="text"
-            value="(656)-976-4980"
-          />
-        </span>
-      </div>
-    </section>
-    <section
-      className="sc-bwzfXH irrVft"
-    >
-      <div
-        className="sc-htpNat hrIxvT"
-      >
-        <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
-        >
-          <label
-            className="sc-dnqmqq ioIzAX"
-          >
-            Address
-          </label>
-          <input
-            className="sc-htoDjs kBSAMN"
-            placeholder="1234 Main St"
-            type="text"
-            value="1861 jan pieterszoon coenstraat"
-          />
-        </span>
-      </div>
-      <div
-        className="sc-htpNat hrIxvT"
-      >
-        <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
-        >
-          <label
-            className="sc-dnqmqq ioIzAX"
-          >
-            City
-          </label>
-          <input
-            className="sc-htoDjs kBSAMN"
-            placeholder="San Diego"
-            type="text"
-            value="San Diego"
-          />
-        </span>
-      </div>
-    </section>
-    <section
-      className="sc-bwzfXH irrVft"
-    >
-      <div
-        className="sc-htpNat hrIxvT"
-      >
-        <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
-        >
-          <label
-            className="sc-dnqmqq ioIzAX"
-          >
-            State
-          </label>
-          <input
-            className="sc-htoDjs kBSAMN"
-            placeholder="California"
-            type="text"
-            value="CA"
-          />
-        </span>
-      </div>
-      <div
-        className="sc-htpNat hrIxvT"
-      >
-        <span
-          style={
-            Object {
-              "position": "relative",
-            }
-          }
-        >
-          <label
-            className="sc-dnqmqq ioIzAX"
-          >
-            Zip Code
-          </label>
-          <input
-            className="sc-htoDjs kBSAMN"
-            placeholder="92071"
-            type="text"
-            value="69217"
-          />
-        </span>
-      </div>
-    </section>
-    <section
-      className="sc-bwzfXH irrVft"
-    >
-      <div
-        className="sc-htpNat bKOCBb"
-        style={
-          Object {
-            "textAlign": "center",
-          }
-        }
-      >
-        <button
-          className="pt-button pt-large pt-intent-primary"
-          disabled={undefined}
-          onClick={undefined}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
-        >
-          <span
-            className="pt-button-text"
-          >
-            Update Profile
-          </span>
-        </button>
-      </div>
-    </section>
-  </form>
-</div>
-`;
-
-exports[`should render outside of store 1`] = `
-<div
-  className="sc-gzVnrw hRHTaE sc-EHOje hHLIWu"
->
-  <section
-    className="sc-bwzfXH kqLuzx"
+  <form
+    onSubmit={[Function]}
   >
-    <div
-      className="sc-htpNat kSibxJ"
-    >
-      <h5
-        className="sc-bZQynM lkYeUM"
-      >
-        My Profile
-      </h5>
-      <div
-        style={
-          Object {
-            "color": "#D8E1E8",
-            "marginBottom": 10,
-          }
-        }
-      >
-        Registered: 
-        2010-09-24 02:10:42
-      </div>
-      <div
-        style={
-          Object {
-            "color": "#E1E8ED",
-          }
-        }
-      >
-        Birthday: 
-        1983-07-14 07:29:45
-      </div>
-    </div>
-    <div
-      className="sc-htpNat egfJaR"
-      style={
-        Object {
-          "textAlign": "right",
-        }
-      }
-    >
-      <img
-        className="sc-ifAKCX gZppUQ"
-        size="medium"
-        src="https://randomuser.me/api/portraits/men/51.jpg"
-        style={
-          Object {
-            "width": 120,
-          }
-        }
-      />
-    </div>
-  </section>
-  <form>
     <section
       className="sc-bwzfXH irrVft"
     >
@@ -316,8 +80,16 @@ exports[`should render outside of store 1`] = `
           </label>
           <input
             className="sc-htoDjs kBSAMN"
+            name="username"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            placeholder="joesmith"
+            tabIndex={1}
             type="text"
-            value="joesmith"
+            value=""
           />
         </span>
       </div>
@@ -338,9 +110,16 @@ exports[`should render outside of store 1`] = `
           </label>
           <input
             className="sc-htoDjs kBSAMN"
+            name="phone"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
             placeholder="(321) 321-3214"
+            tabIndex={2}
             type="text"
-            value="(321) 321-4321"
+            value=""
           />
         </span>
       </div>
@@ -365,9 +144,16 @@ exports[`should render outside of store 1`] = `
           </label>
           <input
             className="sc-htoDjs kBSAMN"
+            name="address"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
             placeholder="1234 Main St"
+            tabIndex={3}
             type="text"
-            value="1234 Main Street"
+            value=""
           />
         </span>
       </div>
@@ -388,9 +174,16 @@ exports[`should render outside of store 1`] = `
           </label>
           <input
             className="sc-htoDjs kBSAMN"
+            name="city"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
             placeholder="San Diego"
+            tabIndex={4}
             type="text"
-            value="San Diego"
+            value=""
           />
         </span>
       </div>
@@ -415,9 +208,16 @@ exports[`should render outside of store 1`] = `
           </label>
           <input
             className="sc-htoDjs kBSAMN"
+            name="state"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
             placeholder="California"
+            tabIndex={5}
             type="text"
-            value="CA"
+            value=""
           />
         </span>
       </div>
@@ -438,9 +238,16 @@ exports[`should render outside of store 1`] = `
           </label>
           <input
             className="sc-htoDjs kBSAMN"
+            name="zip"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
             placeholder="92071"
+            tabIndex={6}
             type="text"
-            value="92101"
+            value=""
           />
         </span>
       </div>
@@ -457,8 +264,8 @@ exports[`should render outside of store 1`] = `
         }
       >
         <button
-          className="pt-button pt-large pt-intent-primary"
-          disabled={undefined}
+          className="pt-button pt-disabled pt-large pt-intent-primary"
+          disabled={true}
           onClick={undefined}
           onKeyDown={[Function]}
           onKeyUp={[Function]}

@@ -9,7 +9,10 @@ export const user = createReducer(
     [actions.updateUser]: (state, { results, info }) => ({
       ...state,
       ...results,
-      info,
+      info: {
+        ...state.info,
+        ...info
+      },
       isLoading: false
     })
   },

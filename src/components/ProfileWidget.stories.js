@@ -1,80 +1,54 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-import { withKnobs, text } from '@storybook/addon-knobs'
+import { Provider } from 'react-redux'
+import configureStore from 'redux-mock-store'
 import MobileLayout from '../../.storybook/Mobile'
-import { ProfileWidget } from './ProfileWidget'
+import ProfileWidget from './ProfileWidget'
 
 const ProfileWidgetStory = storiesOf('Profile Widget', module)
-
-ProfileWidgetStory.addDecorator(withKnobs)
-
-ProfileWidgetStory.add('Desktop', () => {
-  const firstName = text('First Name', 'Joe')
-  const avatar = text(
-    'Avatar',
-    'https://randomuser.me/api/portraits/men/51.jpg'
-  )
-  const username = text('Username', 'joesmith')
-  const phone = text('Phone', '(321) 321-4321')
-  const address = text('Address', '1234 Main Street')
-  const city = text('City', 'San Diego')
-  const state = text('State', 'CA')
-  const zip = text('Zip Code', '92101')
-  const registered = text('Registered', '2010-09-24 02:10:42')
-  const dob = text('Birthday', '1983-07-14 07:29:45')
-
-  return (
-    <div style={{ margin: '50px' }}>
-      <ProfileWidget
-        firstName={firstName}
-        avatar={avatar}
-        username={username}
-        phone={phone}
-        address={address}
-        city={city}
-        state={state}
-        zip={zip}
-        registered={registered}
-        dob={dob}
-      />
-    </div>
-  )
+const mockStore = configureStore([])
+const store = mockStore({
+  user: {
+    isLoading: false,
+    name: {
+      title: 'mr',
+      first: 'romain',
+      last: 'hoogmoed'
+    },
+    login: {
+      username: 'lazyduck408'
+    },
+    phone: '(321) 321-4321',
+    location: {
+      street: '1861 jan pieterszoon coenstraat',
+      city: 'maasdriel',
+      state: 'zeeland',
+      postcode: '69217'
+    },
+    dob: '1983-07-14 07:29:45',
+    registered: '2010-09-24 02:10:42',
+    picture: {
+      large: 'https://randomuser.me/api/portraits/men/83.jpg'
+    }
+  }
 })
 
-ProfileWidgetStory.add('Mobile', () => {
-  const firstName = text('First Name', 'Joe')
-  const avatar = text(
-    'Avatar',
-    'https://randomuser.me/api/portraits/men/51.jpg'
-  )
-  const username = text('Username', 'joesmith')
-  const phone = text('Phone', '(321) 321-4321')
-  const address = text('Address', '1234 Main Street')
-  const city = text('City', 'San Diego')
-  const state = text('State', 'CA')
-  const zip = text('Zip Code', '92101')
-  const registered = text('Registered', '2010-09-24 02:10:42')
-  const dob = text('Birthday', '1983-07-14 07:29:45')
+ProfileWidgetStory.add('Desktop', () => (
+  <div style={{ margin: '50px' }}>
+    <Provider store={store}>
+      <ProfileWidget />
+    </Provider>
+  </div>
+))
 
-  return (
-    <MobileLayout>
-      {() => (
-        <div style={{ float: 'right', margin: 10 }}>
-          <ProfileWidget
-            firstName={firstName}
-            avatar={avatar}
-            username={username}
-            phone={phone}
-            address={address}
-            city={city}
-            state={state}
-            zip={zip}
-            registered={registered}
-            dob={dob}
-          />
-        </div>
-      )}
-    </MobileLayout>
-  )
-})
+ProfileWidgetStory.add('Mobile', () => (
+  <MobileLayout>
+    {() => (
+      <div style={{ float: 'right', margin: 10 }}>
+        <Provider store={store}>
+          <ProfileWidget />
+        </Provider>
+      </div>
+    )}
+  </MobileLayout>
+))
