@@ -7,13 +7,18 @@
   "author": "JB <jasonbenesch@gmail.com>",
   "private": true,
   "dependencies": {
+    "@blueprintjs/core": "2.3.1",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
+    "hedron": "0.7.1",
+    "normalize.css": "^8.0.0",
     "prop-types": "15.6.1",
     "react": "16.4.0",
     "react-dom": "16.4.0",
     "react-scripts": "1.1.4",
-    "react-test-renderer": "16.4.0"
+    "react-test-renderer": "16.4.0",
+    "react-transition-group": "2.3.1",
+    "styled-components": "3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
