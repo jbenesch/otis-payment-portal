@@ -1,6 +1,6 @@
-import React from 'react';
-import { Row, Column } from 'hedron';
-import styled from 'styled-components';
+import React from 'react'
+import { Row, Column } from 'hedron'
+import styled from 'styled-components'
 import {
   Button,
   ButtonGroup,
@@ -8,13 +8,13 @@ import {
   Icon,
   Intent,
   Tag
-} from '@blueprintjs/core';
-import Layout from '../components/Layout';
-import Widget from '../components/Widget';
+} from '@blueprintjs/core'
+import Layout from '../components/Layout'
+import Widget from '../components/Widget'
 
 const WidgetTitle = styled.h5`
   color: ${Colors.LIGHT_GRAY5};
-`;
+`
 
 const Complaints = () => (
   <Layout title="Complaints" subtitle="Otis Payment Complainers">
@@ -71,10 +71,10 @@ const Complaints = () => (
       </Column>
     </Row>
   </Layout>
-);
+)
 
-Complaints.propTypes = {};
+Complaints.propTypes = {}
 
-Complaints.defaultProps = {};
+Complaints.defaultProps = {}
 
-export default Complaints;
+export default Complaints

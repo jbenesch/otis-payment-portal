@@ -1,5 +1,5 @@
-import { updateUser } from './actions';
-import { user as userReducer } from './reducer';
+import { updateUser } from './actions'
+import { user as userReducer } from './reducer'
 
 describe('User reducer', () => {
   describe('updateUser', () => {
@@ -18,13 +18,13 @@ describe('User reducer', () => {
           page: 1,
           version: '1.1'
         }
-      };
-      const reduced = userReducer({ isLoading: true }, updateUser(userStub));
+      }
+      const reduced = userReducer({ isLoading: true }, updateUser(userStub))
       expect(reduced).toEqual({
         ...userStub.results,
         info: userStub.info,
         isLoading: false
-      });
-    });
-  });
-});
+      })
+    })
+  })
+})

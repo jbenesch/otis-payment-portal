@@ -1,12 +1,12 @@
-import { routerForBrowser } from 'redux-little-router';
+import { routerForBrowser } from 'redux-little-router'
 
-export const DASHBOARD = 'dashboard';
-export const ACCOUNT = 'account';
-export const MOBILE = 'mobile';
-export const BILLS = 'bills';
-export const COMPLAINTS = 'complaints';
-export const SUPPORT = 'support';
-export const LOGIN = 'login';
+export const DASHBOARD = 'dashboard'
+export const ACCOUNT = 'account'
+export const MOBILE = 'mobile'
+export const BILLS = 'bills'
+export const COMPLAINTS = 'complaints'
+export const SUPPORT = 'support'
+export const LOGIN = 'login'
 
 export const ROUTES = {
   '/': {
@@ -37,8 +37,8 @@ export const ROUTES = {
     id: LOGIN,
     title: 'Login to Otis Payment Portal'
   }
-};
+}
 
 export const { reducer, enhancer, middleware } = routerForBrowser({
   routes: ROUTES
-});
+})

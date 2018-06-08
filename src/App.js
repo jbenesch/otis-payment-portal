@@ -1,15 +1,15 @@
-import React from 'react';
-import { Fragment } from 'redux-little-router';
-import * as Routes from './routes';
+import React from 'react'
+import { Fragment } from 'redux-little-router'
+import * as Routes from './routes'
 
-import LoginPage from './pages/Login';
-import Dashboard from './pages/Dashboard';
-import Account from './pages/Account';
-import Mobile from './pages/Mobile';
-import Bills from './pages/Bills';
-import Complaints from './pages/Complaints';
-import Support from './pages/Support';
-import NoMatch from './pages/NoMatch';
+import LoginPage from './pages/Login'
+import Dashboard from './pages/Dashboard'
+import Account from './pages/Account'
+import Mobile from './pages/Mobile'
+import Bills from './pages/Bills'
+import Complaints from './pages/Complaints'
+import Support from './pages/Support'
+import NoMatch from './pages/NoMatch'
 
 const App = () => (
   <Fragment forRoute="/">
@@ -43,10 +43,10 @@ const App = () => (
       </Fragment>
     </div>
   </Fragment>
-);
+)
 
-App.propTypes = {};
+App.propTypes = {}
 
-App.defaultProps = {};
+App.defaultProps = {}
 
-export default App;
+export default App

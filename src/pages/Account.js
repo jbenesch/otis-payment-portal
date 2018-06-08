@@ -1,6 +1,6 @@
-import React from 'react';
-import { Row, Column } from 'hedron';
-import styled from 'styled-components';
+import React from 'react'
+import { Row, Column } from 'hedron'
+import styled from 'styled-components'
 import {
   Button,
   ButtonGroup,
@@ -8,13 +8,13 @@ import {
   Icon,
   Intent,
   Tag
-} from '@blueprintjs/core';
-import Layout from '../components/Layout';
-import Widget from '../components/Widget';
+} from '@blueprintjs/core'
+import Layout from '../components/Layout'
+import Widget from '../components/Widget'
 
 const WidgetTitle = styled.h5`
   color: ${Colors.LIGHT_GRAY5};
-`;
+`
 
 const Account = () => (
   <Layout title="My Account" subtitle="Otis Payment Portal Account">
@@ -71,10 +71,10 @@ const Account = () => (
       </Column>
     </Row>
   </Layout>
-);
+)
 
-Account.propTypes = {};
+Account.propTypes = {}
 
-Account.defaultProps = {};
+Account.defaultProps = {}
 
-export default Account;
+export default Account

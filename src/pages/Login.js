@@ -1,18 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Page, Row, Column } from 'hedron';
-import { Field, reduxForm, SubmissionError } from 'redux-form';
-import styled from 'styled-components';
-import { Button, Callout, Classes, Colors, Intent } from '@blueprintjs/core';
-import { login } from '../actions';
-import Logo from '../assets/logo.svg';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Page, Row, Column } from 'hedron'
+import { Field, reduxForm, SubmissionError } from 'redux-form'
+import styled from 'styled-components'
+import { Button, Callout, Classes, Colors, Intent } from '@blueprintjs/core'
+import { login } from '../actions'
+import Logo from '../assets/logo.svg'
 
 const Viewport = styled.div`
   background: ${Colors.DARK_GRAY1};
   border-radius: 24px;
   opacity: 0.98;
   width: 100%;
-`;
+`
 
 const Widget = styled.div`
   border-radius: 24px;
@@ -21,7 +21,7 @@ const Widget = styled.div`
   width: 100%;
   padding: 10px;
   padding-bottom: 20px;
-`;
+`
 
 const WidgetHeader = styled.div`
   display: flex;
@@ -31,7 +31,7 @@ const WidgetHeader = styled.div`
   justify-content: center;
   padding: 20px 0;
   margin-bottom: 20px;
-`;
+`
 
 const WidgetTitle = styled.h5`
   color: ${Colors.LIGHT_GRAY5};
@@ -39,21 +39,21 @@ const WidgetTitle = styled.h5`
   line-height: 1.3em;
   padding-top: 10px;
   padding-left: 10px;
-`;
+`
 
 const Input = styled(Field)`
   width: 100%;
   background: transparent;
   font-size: 1.2em;
   border: 0;
-  border-bottom: 1px solid
-    ${({ active }) => (active ? Colors.GREEN5 : Colors.GRAY5)};
+  border-bottom: 1px solid;
+  ${({ active }) => (active ? Colors.GREEN5 : Colors.GRAY5)};
   padding: 15px 5px;
   color: ${Colors.LIGHT_GRAY5};
   &::placeholder {
     color: ${Colors.DARK_GRAY5};
   }
-`;
+`
 
 const Label = styled.label`
   font-weight: bold;
@@ -62,7 +62,7 @@ const Label = styled.label`
   left: 5px;
   top: -30px;
   color: ${Colors.WHITE};
-`;
+`
 
 const DefaultCallout = () => (
   <Callout icon="info-sign" style={{ marginTop: 20 }}>
@@ -70,7 +70,7 @@ const DefaultCallout = () => (
     Your unique token should be something memerable and unique to you so we can
     load the same user every time you login.
   </Callout>
-);
+)
 
 const ErrorCallout = ({ error }) => (
   <Callout icon="error" intent={Intent.WARNING} style={{ marginTop: 20 }}>
@@ -79,7 +79,7 @@ const ErrorCallout = ({ error }) => (
     </h4>
     {error}
   </Callout>
-);
+)
 
 const Login = ({ handleSubmit, pristine, submitting, error }) => (
   <Page fluid className="pt-dark">
@@ -154,32 +154,32 @@ const Login = ({ handleSubmit, pristine, submitting, error }) => (
       </Column>
     </Row>
   </Page>
-);
+)
 
 Login.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   pristine: PropTypes.bool,
   submitting: PropTypes.bool,
   error: PropTypes.string
-};
+}
 
 Login.defaultProps = {
   pristine: true,
   submitting: false,
   error: ''
-};
+}
 
 export default reduxForm({
   form: 'login',
   onSubmit: ({ personalToken }, dispatch) => {
     if (personalToken && personalToken.length > 3) {
-      dispatch(login(personalToken));
+      dispatch(login(personalToken))
     } else {
-      const msg = 'Your unique token should be longer than 3 characters.';
+      const msg = 'Your unique token should be longer than 3 characters.'
       throw new SubmissionError({
         personalToken: msg,
         _error: msg
-      });
+      })
     }
   }
-})(Login);
+})(Login)

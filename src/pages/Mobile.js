@@ -1,6 +1,6 @@
-import React from 'react';
-import { Row, Column } from 'hedron';
-import styled from 'styled-components';
+import React from 'react'
+import { Row, Column } from 'hedron'
+import styled from 'styled-components'
 import {
   Button,
   ButtonGroup,
@@ -8,13 +8,13 @@ import {
   Icon,
   Intent,
   Tag
-} from '@blueprintjs/core';
-import Layout from '../components/Layout';
-import Widget from '../components/Widget';
+} from '@blueprintjs/core'
+import Layout from '../components/Layout'
+import Widget from '../components/Widget'
 
 const WidgetTitle = styled.h5`
   color: ${Colors.LIGHT_GRAY5};
-`;
+`
 
 const Mobile = () => (
   <Layout
@@ -74,10 +74,10 @@ const Mobile = () => (
       </Column>
     </Row>
   </Layout>
-);
+)
 
-Mobile.propTypes = {};
+Mobile.propTypes = {}
 
-Mobile.defaultProps = {};
+Mobile.defaultProps = {}
 
-export default Mobile;
+export default Mobile

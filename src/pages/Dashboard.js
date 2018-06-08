@@ -1,9 +1,9 @@
-import React from 'react';
-import { Row, Column } from 'hedron';
-import Layout from '../components/Layout';
-import AccountWidget from '../components/AccountWidget';
-import ProfileWidget from '../components/ProfileWidget';
-import { Mobile, Tablet, Laptop, Desktop } from '../components/BreakPoint';
+import React from 'react'
+import { Row, Column } from 'hedron'
+import Layout from '../components/Layout'
+import AccountWidget from '../components/AccountWidget'
+import ProfileWidget from '../components/ProfileWidget'
+import { Mobile, Tablet, Laptop, Desktop } from '../components/BreakPoint'
 
 const Dashboard = () => (
   <Layout title="My Dashboard" subtitle="Welcome to Otis payment portal">
@@ -43,10 +43,10 @@ const Dashboard = () => (
       </Desktop>
     </Row>
   </Layout>
-);
+)
 
-Dashboard.propTypes = {};
+Dashboard.propTypes = {}
 
-Dashboard.defaultProps = {};
+Dashboard.defaultProps = {}
 
-export default Dashboard;
+export default Dashboard

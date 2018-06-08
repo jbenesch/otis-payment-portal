@@ -1,6 +1,6 @@
-import React from 'react';
-import { Row, Column } from 'hedron';
-import styled from 'styled-components';
+import React from 'react'
+import { Row, Column } from 'hedron'
+import styled from 'styled-components'
 import {
   Button,
   ButtonGroup,
@@ -8,13 +8,13 @@ import {
   Icon,
   Intent,
   Tag
-} from '@blueprintjs/core';
-import Layout from '../components/Layout';
-import Widget from '../components/Widget';
+} from '@blueprintjs/core'
+import Layout from '../components/Layout'
+import Widget from '../components/Widget'
 
 const WidgetTitle = styled.h5`
   color: ${Colors.LIGHT_GRAY5};
-`;
+`
 
 const Support = () => (
   <Layout title="My Support" subtitle="We're here for you.">
@@ -71,10 +71,10 @@ const Support = () => (
       </Column>
     </Row>
   </Layout>
-);
+)
 
-Support.propTypes = {};
+Support.propTypes = {}
 
-Support.defaultProps = {};
+Support.defaultProps = {}
 
-export default Support;
+export default Support

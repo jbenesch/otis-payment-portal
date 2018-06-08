@@ -1,6 +1,6 @@
-import React from 'react';
-import { Row, Column } from 'hedron';
-import styled from 'styled-components';
+import React from 'react'
+import { Row, Column } from 'hedron'
+import styled from 'styled-components'
 import {
   Button,
   ButtonGroup,
@@ -8,13 +8,13 @@ import {
   Icon,
   Intent,
   Tag
-} from '@blueprintjs/core';
-import Layout from '../components/Layout';
-import Widget from '../components/Widget';
+} from '@blueprintjs/core'
+import Layout from '../components/Layout'
+import Widget from '../components/Widget'
 
 const WidgetTitle = styled.h5`
   color: ${Colors.LIGHT_GRAY5};
-`;
+`
 
 const Bills = () => (
   <Layout title="My Bills" subtitle="Bills needed to be reconciled.">
@@ -71,10 +71,10 @@ const Bills = () => (
       </Column>
     </Row>
   </Layout>
-);
+)
 
-Bills.propTypes = {};
+Bills.propTypes = {}
 
-Bills.defaultProps = {};
+Bills.defaultProps = {}
 
-export default Bills;
+export default Bills
